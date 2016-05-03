@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "tb_tipo_atividade", schema = "public")
-public class tipoAtividade implements Serializable {
+public class TipoAtividade implements Serializable {
 
     @Id
     @Column(name = "CODIGO", unique = true)
@@ -18,10 +18,10 @@ public class tipoAtividade implements Serializable {
     @Column(name = "DESCRICAO")
     private String descricao;
 
-    public tipoAtividade() {
+    public TipoAtividade() {
     }
 
-    public tipoAtividade(String codigo, String descricao) {
+    public TipoAtividade(String codigo, String descricao) {
         this.codigo = codigo;
         this.descricao = descricao;
     }
@@ -44,6 +44,6 @@ public class tipoAtividade implements Serializable {
 
     @Override
     public String toString() {
-        return "Tipo atividade: [codigo " + this.codigo + ", descrição " + this.descricao + "]";
+        return "Tipo atividade: [codigo " + this.codigo + ", descriÃ§Ã£o " + this.descricao + "]";
     }
 }
