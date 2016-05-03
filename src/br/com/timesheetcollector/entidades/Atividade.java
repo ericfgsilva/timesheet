@@ -16,19 +16,39 @@ public class Atividade implements Serializable{
     @Column(name = "CODIGO")
     private String codigo;
 
-    @Column(name = "NOME")
-    private String nome;
+    @Column(name = "TITULO")
+    private String titulo;
 
-    @Column(name = "TIPO")
-    private String tipo;
+    @Column(name = "DESCRICAO")
+    private String descricao;
+
+    @Column(name = "CD_TIPO")
+    private String cdTipo;
+
+    @Column(name = "CD_PROJETO")
+    private String cdProjeto;
+
+    @Column(name = "CD_CLIENTE")
+    private String cdCliente;
+
+    @Column(name = "CD_CRIADOR")
+    private String cdCriador;
+
+    @Column(name = "CD_DONO")
+    private String cdDono;
 
     public Atividade(){
     }
 
-    public Atividade(String codigo, String nome, String tipo){
+    public Atividade(String codigo, String titulo, String descricao, String cdTipo, String cdProjeto, String cdCliente, String cdCriador, String cdDono) {
         this.codigo = codigo;
-        this.nome = nome;
-        this.tipo = tipo;
+        this.titulo = titulo;
+        this.descricao = descricao;
+        this.cdTipo = cdTipo;
+        this.cdProjeto = cdProjeto;
+        this.cdCliente = cdCliente;
+        this.cdCriador = cdCriador;
+        this.cdDono = cdDono;
     }
 
     public String getCodigo() {
@@ -39,24 +59,65 @@ public class Atividade implements Serializable{
         this.codigo = codigo;
     }
 
-    public String getNome() {
-        return nome;
+    public String getTitulo() {
+        return titulo;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
-    public String getTipo() {
-        return tipo;
+    public String getDescricao() {
+        return descricao;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public String getCdTipo() {
+        return cdTipo;
+    }
+
+    public void setCdTipo(String cdTipo) {
+        this.cdTipo = cdTipo;
+    }
+
+    public String getCdProjeto() {
+        return cdProjeto;
+    }
+
+    public void setCdProjeto(String cdProjeto) {
+        this.cdProjeto = cdProjeto;
+    }
+
+    public String getCdCliente() {
+        return cdCliente;
+    }
+
+    public void setCdCliente(String cdCliente) {
+        this.cdCliente = cdCliente;
+    }
+
+    public String getCdCriador() {
+        return cdCriador;
+    }
+
+    public void setCdCriador(String cdCriador) {
+        this.cdCriador = cdCriador;
+    }
+
+    public String getCdDono() {
+        return cdDono;
+    }
+
+    public void setCdDono(String cdDono) {
+        this.cdDono = cdDono;
     }
 
     @Override
     public String toString(){
-        return "Atividade: [Código " +this.codigo + ", Nome " +this.nome + " Tipo " +this.tipo + "]";
+        return "Atividade: [Código " + this.codigo + ", Nome " + this.titulo + ", Descrição " + this.descricao + ", tipoAtividade " + this.cdTipo +
+                ", Projeto " + this.cdProjeto + ", Cliente " + this.cdCliente + ", Criador " + this.cdCriador + ", Dono " + this.cdDono + "]";
     }
 }
