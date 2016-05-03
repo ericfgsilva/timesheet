@@ -1,4 +1,4 @@
-package br.com.timesheetcollector.negocio.excecoes;
+package br.com.timesheetcollector.negocio.excecoes.generica;
 
 public class CampoObrigatorioNaoPreenchidoException extends Exception {
 
