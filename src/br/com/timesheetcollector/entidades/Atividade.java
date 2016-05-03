@@ -13,7 +13,7 @@ import java.io.Serializable;
 public class Atividade implements Serializable{
 
     @Id
-    @Column(name = "CODIGO")
+    @Column(name = "CODIGO", unique = true)
     private String codigo;
 
     @Column(name = "TITULO")
