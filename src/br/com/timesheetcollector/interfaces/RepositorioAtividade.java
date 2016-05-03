@@ -1,8 +1,8 @@
 package br.com.timesheetcollector.interfaces;
 
 import br.com.timesheetcollector.entidades.Atividade;
-import br.com.timesheetcollector.negocio.excecoes.AtividadeInvalidaException;
-import br.com.timesheetcollector.negocio.excecoes.AtividadeNaoCadastradaException;
+import br.com.timesheetcollector.negocio.excecoes.atividade.AtividadeInvalidaException;
+import br.com.timesheetcollector.negocio.excecoes.atividade.AtividadeNaoCadastradaException;
 
 /**
  * Created by eric.silva on 30/04/2016.

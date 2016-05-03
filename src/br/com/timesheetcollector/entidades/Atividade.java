@@ -117,7 +117,7 @@ public class Atividade implements Serializable{
 
     @Override
     public String toString(){
-        return "Atividade: [Código " + this.codigo + ", Nome " + this.titulo + ", Descrição " + this.descricao + ", tipoAtividade " + this.cdTipo +
+        return "Atividade: [Cï¿½digo " + this.codigo + ", Nome " + this.titulo + ", Descriï¿½ï¿½o " + this.descricao + ", RepositorioTipoAtividade.java " + this.cdTipo +
                 ", Projeto " + this.cdProjeto + ", Cliente " + this.cdCliente + ", Criador " + this.cdCriador + ", Dono " + this.cdDono + "]";
     }
 }
