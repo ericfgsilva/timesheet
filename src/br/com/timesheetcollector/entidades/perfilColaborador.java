@@ -12,7 +12,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "tb_perfil_colaborador", schema = "public")
-public class perfilColaborador implements Serializable{
+public class PerfilColaborador implements Serializable {
 
     @Id
     @Column(name = "CODIGO", unique = true)
@@ -24,10 +24,10 @@ public class perfilColaborador implements Serializable{
     @Column(name = "CD_PERMISSOES")
     private String cdPermissoes;
 
-    public perfilColaborador(){
+    public PerfilColaborador() {
     }
 
-    public perfilColaborador(String codigo, String descricao, String cdPermissoes){
+    public PerfilColaborador(String codigo, String descricao, String cdPermissoes) {
         this.codigo = codigo;
         this.descricao = descricao;
         this.cdPermissoes = cdPermissoes;
@@ -59,6 +59,6 @@ public class perfilColaborador implements Serializable{
 
     @Override
     public String toString(){
-        return "Perfil colaborador: código "+this.codigo+ ", descrição "+this.descricao+ ", código de permissões "+this.cdPermissoes+" ]";
+        return "Perfil colaborador: cï¿½digo "+this.codigo+ ", descriï¿½ï¿½o "+this.descricao+ ", cï¿½digo de permissï¿½es "+this.cdPermissoes+" ]";
     }
 }
